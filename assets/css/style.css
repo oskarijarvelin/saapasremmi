@@ -1,0 +1,29 @@
+img {
+  max-width: 100%;
+}
+.row {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 20px;
+}
+
+.card {
+  padding: 0px;
+  transition: all 0.5s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.shadow-warning {
+  box-shadow: 0 0.5rem 1rem rgba(255, 193, 7, 0.4);
+}
+
+/* Must-Have Shit */
+.kg-width-wide{}
+.kg-width-full{}
+.kg-gallery-container{}
+.kg-gallery-row{}
+.kg-gallery-image{}

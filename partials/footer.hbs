@@ -1,18 +1,18 @@
 <footer class="row">
-  <section class="col-12 col-md-4 col-lg-6 my-5">&copy; {{date format="YYYY"}}: <a href="{{@blog.url}}">{{@blog.title}}</a></section>
-  <nav class="col-12 col-md-8 col-lg-6 my-5 nav justify-content-end">
-    <a class="nav-link" href="{{@blog.url}}">Latest Posts</a>
-    {{#if @blog.facebook}}<a class="nav-link" href="{{facebook_url @blog.facebook}}" target="_blank" rel="noopener">Facebook</a>{{/if}}
-    {{#if @blog.twitter}}<a class="nav-link" href="{{twitter_url @blog.twitter}}" target="_blank" rel="noopener">Twitter</a>{{/if}}
-    <a class="nav-link" href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+  <section class="col-12 col-md-4 col-lg-6 order-2 order-md-1 my-5 text-center text-md-left">&copy; {{date format="YYYY"}}: <a href="{{@blog.url}}">{{@blog.title}}</a></section>
+  <nav class="col-12 col-md-8 col-lg-6 my-5 order-1 order-md-2 nav justify-content-center justify-content-md-end">
+    <a class="nav-link mr-3" href="{{@blog.url}}">Latest Posts</a>
+    {{#if @blog.facebook}}<a class="nav-link mr-3" href="{{facebook_url @blog.facebook}}" target="_blank" rel="noopener">Facebook</a>{{/if}}
+    {{#if @blog.twitter}}<a class="nav-link mr-3" href="{{twitter_url @blog.twitter}}" target="_blank" rel="noopener">Twitter</a>{{/if}}
+    <a class="nav-link mr-3" href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
   </nav>
 </footer>
 
 {{{block "scripts"}}}
 {{ghost_foot}}
 
-<script src="{{asset "jquery.min.js"}}"></script>
-<script src="{{asset "popper.min.js"}}"></script>
-<script src="{{asset "bootstrap.min.js"}}"></script>
-<script src="{{asset "bootstrap4.masonry.min.js"}}"></script>
-<script src="{{asset "masonry.min.js"}}"></script>
+<script src="{{asset "js/jquery.min.js"}}"></script>
+<script src="{{asset "js/popper.min.js"}}"></script>
+<script src="{{asset "js/bootstrap.min.js"}}"></script>
+<script src="{{asset "js/bootstrap4.masonry.min.js"}}"></script>
+<script src="{{asset "js/masonry.min.js"}}"></script>

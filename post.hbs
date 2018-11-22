@@ -10,8 +10,8 @@
     <article class="row">
 
       {{#if feature_image}}
-      <div class="shadow zoomfx-container mw-100">
-        <a href="{{url}}"><img class="card-img-top feature-image zoomfx" src="{{feature_image}}"></a>
+      <div class="shadow mw-100">
+        <a href="{{url}}"><img class="card-img-top feature-image" src="{{feature_image}}"></a>
       </div>
       {{/if}}
 
@@ -44,10 +44,10 @@
       <div class="row card-body">
         <div class="col-12 col-sm-6">
           {{#if profile_image}}
-            <img class="rounded-circle mw-50" src="{{profile_image}}" alt="{{name}}" width="300px" />
+            <img class="rounded-circle py-3" src="{{profile_image}}" alt="{{name}}" width="300px" />
           {{/if}}
         </div>
-        <div class="col-12 col-sm-6">
+        <div class="col-12 col-sm-6 py-3">
           <h1 class="card-title display-4">{{name}}</h1>
           {{#if bio}}
             <h2 class="card-subtitle lead">{{plural ../pagination.total empty='Ei artikkeleita' singular='% artikkeli' plural='% artikkelia'}}</h2>
