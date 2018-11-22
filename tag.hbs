@@ -1,0 +1,24 @@
+{{!< default}}
+
+  {{#tag}}
+    <header class="row mw-100 bg-white sticky-top shadow">
+      <div class="row col-12">{{> "site-nav"}}</div>
+    </header>
+    <div class="row my-5">
+      <h1 class="col-12 display-4 text-center">{{name}}</h1>
+      <h2 class="col-12 text-center">
+        {{#if description}}
+          {{description}}
+        {{else}}
+          Aiheesta yhteensä {{plural ../pagination.total empty='posts' singular='% julkaisu' plural='% julkaisua'}}
+        {{/if}}
+      </h2>
+    </div>
+
+  {{/tag}}
+
+  <main class="row masonry" data-target=".card" data-col-xs="12" data-col-md="6">
+    {{#foreach posts}}
+    {{> "post-card"}}
+    {{/foreach}}
+  </main>

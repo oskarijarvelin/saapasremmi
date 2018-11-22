@@ -1,0 +1,12 @@
+<form method="post" action="{{action}}" class="row">
+    {{hidden}}
+    <div class="col-10 px-0">
+    {{input_email class="form-control p-2" placeholder="matti.meikalainen@domain.fi" value=email autofocus="false"}}
+    </div>
+    <div class="col-2 px-0">
+    <button class="btn btn-info p-2 ml-1" type="submit">Lähetä</button>
+    </div>
+    {{script}}
+</form>
+
+{{#if error}}<p>{{ error.message }}</p>{{/if}}

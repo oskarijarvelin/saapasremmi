@@ -1,0 +1,9 @@
+<div>
+  <ul class="nav nav-pills">
+    {{#foreach navigation}}
+    <li class="nav-item py-2">
+      <a class="nav-link py-2 {{#if current}}active{{/if}}" href="{{url absolute="true"}}">{{label}}</a>
+    </li>
+    {{/foreach}}
+  </ul>
+</div>

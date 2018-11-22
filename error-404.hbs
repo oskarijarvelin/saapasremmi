@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>{{meta_title}}</title>
+
+  <link rel="stylesheet" href="{{asset "bootstrap.min.css"}}" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{{asset "style.css"}}" />
+</head>
+
+<body class="container-fluid p-0">
+
+  <header class="row mw-100 m-0 px-0 py-4 bg-white sticky-top shadow">
+    <div class="row col-12">{{> "site-nav"}}</div>
+  </header>
+
+  <main>
+    <section class="row my-5">
+      <h1 class="col-12 display-1 text-center">{{code}}</h1>
+      <p class="col-12 display-4 text-center">{{message}}</p>
+      <a  class="col-12 text-center" href="{{@blog.url}}">Go to the front page →</a>
+    </section>
+  </main>
+
+  {{#get "posts" limit="4"}}
+    <aside class="row masonry" data-target=".card" data-col-xs="12" data-col-md="6">
+      {{#foreach posts}}
+      <div class="col-12 col-md-6">
+        <div class="col-12 card shadow my-4">
+        {{> "post-card"}}
+        </div>
+      </div>
+      {{/foreach}}
+    </aside>
+  {{/get}}
+
+  {{> "footer"}}
+
+</body>
+</html>

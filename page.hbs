@@ -1,0 +1,29 @@
+{{!< default}}
+
+  <header class="mw-100 bg-white sticky-top shadow">
+    <div class="row col-12">{{> "site-nav"}}</div>
+  </header>
+
+  {{#post}}
+
+  <main>
+    <article class="row">
+
+      {{#if feature_image}}
+      <div class="shadow zoomfx-container mw-100">
+        <a href="{{url}}"><img class="card-img-top feature-image zoomfx" src="{{feature_image}}"></a>
+      </div>
+      {{/if}}
+
+      <header class="col-12 mt-5 mb-2">
+        <h1 class="display-4">{{title}}</h1>
+      </header>
+
+      <section class="col-12 px-3">
+        {{content}}
+      </section>
+
+    </article>
+  </main>
+
+  {{/post}}
