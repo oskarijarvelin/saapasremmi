@@ -10,7 +10,7 @@
     {{/is}}
 
 
-    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse {{#is "home"}}justify-content-center{{else}}justify-content-end{{/is}}" id="navbarSupportedContent">
       {{navigation}}
     </div>
     {{/if}}
