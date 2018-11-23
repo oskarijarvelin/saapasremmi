@@ -1,6 +1,6 @@
 {{!< default}}
 
-  <header class="mw-100 bg-white sticky-top shadow">
+  <header class="bg-white sticky-top shadow">
     <div class="row col-12">{{> "site-nav"}}</div>
   </header>
 
@@ -10,12 +10,12 @@
     <article class="row">
 
       {{#if feature_image}}
-      <div class="shadow mw-100">
+      <div class="shadow my-5">
         <a href="{{url}}"><img class="card-img-top feature-image" src="{{feature_image}}"></a>
       </div>
       {{/if}}
 
-      <header class="col-12 mt-5 mb-2">
+      <header class="col-12 my-2">
         {{#if featured}}
           <div class="text-warning"><p class="lead font-weight-bold">POIMINTO</p></div>
         {{/if}}
