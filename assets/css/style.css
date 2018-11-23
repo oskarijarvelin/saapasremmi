@@ -17,6 +17,10 @@ img {
   transform: scale(1.03);
 }
 
+.feature-image {
+  transform: scale(1.005);
+}
+
 .shadow-warning {
   box-shadow: 0 0.5rem 1rem rgba(255, 193, 7, 0.4);
 }
