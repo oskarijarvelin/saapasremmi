@@ -8,8 +8,8 @@
 
   <title>{{meta_title}}</title>
 
-  <link rel="stylesheet" href="{{asset "bootstrap.min.css"}}" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="{{asset "style.css"}}" />
+  <link rel="stylesheet" href="{{asset "css/bootstrap.min.css"}}" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
 </head>
 
 <body class="container-fluid p-0">
@@ -20,20 +20,16 @@
 
   <main>
     <section class="row my-5">
-      <h1 class="col-12 display-1 text-center">{{code}}</h1>
-      <p class="col-12 display-4 text-center">{{message}}</p>
-      <a  class="col-12 text-center" href="{{@blog.url}}">Go to the front page →</a>
+      <h1 class="col-12 display-1 text-center">Virhe 404</h1>
+      <p class="col-12 display-4 text-center">Sivua ei löytynyt</p>
+      <a  class="col-12 text-center" href="{{@blog.url}}">Palaa etusivulle →</a>
     </section>
   </main>
 
-  {{#get "posts" limit="4"}}
-    <aside class="row masonry" data-target=".card" data-col-xs="12" data-col-md="6">
+  {{#get "posts" limit="6"}}
+    <aside class="row masonry" data-target=".card" data-col-xs="12" data-col-md="6" data-col-lg="4">
       {{#foreach posts}}
-      <div class="col-12 col-md-6">
-        <div class="col-12 card shadow my-4">
         {{> "post-card"}}
-        </div>
-      </div>
       {{/foreach}}
     </aside>
   {{/get}}
