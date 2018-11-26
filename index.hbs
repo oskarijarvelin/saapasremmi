@@ -1,19 +1,9 @@
 {{!< default}}
 
-  <header class="row my-5 justify-content-center">
-    {{#if @blog.logo}}
-        <img class="site-logo my-5" src="{{@blog.logo}}" alt="{{@blog.title}}" width="600px" height="auto"/>
-    {{else}}
-      <h1 class="col-12 display-2 text-center">{{@blog.title}}</h1>
-      <h2 class="col-12 display-4 text-center">{{@blog.description}}</h2>
-    {{/if}}
-    <div class="col-12 mt-5">{{> "site-nav"}}</div>
-  </header>
+  {{> "header"}}
 
   <main class="row masonry" data-target=".card" data-col-xs="12" data-col-md="6" data-col-lg="4">
-    <div class="card-columns">
     {{#foreach posts}}
     {{> "post-card"}}
     {{/foreach}}
-    </div>
   </main>

@@ -8,15 +8,13 @@
 
   <title>{{meta_title}}</title>
 
-  <link rel="stylesheet" href="{{asset "css/bootstrap.min.css"}}" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{asset "css/bootstrap.min.css"}}">
   <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
 </head>
 
 <body class="container-fluid p-0">
 
-  <header class="row mw-100 m-0 px-0 py-4 bg-white sticky-top shadow">
-    <div class="row col-12">{{> "site-nav"}}</div>
-  </header>
+  {{> "header"}}
 
   <main>
     <section class="row my-5">
