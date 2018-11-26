@@ -7,7 +7,9 @@
   </header>
 
   <main class="row masonry" data-target=".card" data-col-xs="12" data-col-md="6" data-col-lg="4">
+    <div class="card-columns">
     {{#foreach posts}}
     {{> "post-card"}}
     {{/foreach}}
+    </div>
   </main>

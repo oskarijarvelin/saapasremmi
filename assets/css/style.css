@@ -26,8 +26,58 @@ img {
 }
 
 /* Must-Have Shit */
-.kg-width-wide{}
-.kg-width-full{}
-.kg-gallery-container{}
-.kg-gallery-row{}
-.kg-gallery-image{}
+.kg-image-card{
+  padding: 30px 30px;
+}
+.kg-width-wide{
+  width: 100%;
+  height: auto;
+  padding: 30px 0px;
+}
+.kg-width-full{
+  position: relative;
+  width: 99vw;
+  height: auto;
+  left: calc(-49.5vw + 50%);
+  padding: 0px;
+  margin: 0px;
+}
+.kg-gallery-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+  padding: 30px 0px;
+}
+.kg-gallery-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.kg-gallery-image img {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.kg-gallery-row:not(:first-of-type) {
+  margin: 0.75em 0 0 0;
+}
+.kg-gallery-image:not(:first-of-type) {
+  margin: 0 0 0 0.75em;
+}
+.kg-gallery-card + .kg-image-card.kg-width-wide,
+.kg-gallery-card + .kg-gallery-card,
+.kg-image-card.kg-width-wide + .kg-gallery-card,
+.kg-image-card.kg-width-wide + .kg-image-card.kg-width-wide {
+    margin: -2.25em 0 3em;
+}
+
+
+figcaption {
+  max-width: 100%;
+  padding: 5px 40px;
+  text-align: center;
+  color: #555;
+  font-style: italic;
+}
