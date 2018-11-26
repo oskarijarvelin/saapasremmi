@@ -1,18 +1,20 @@
 <nav class="nav col-12 navbar navbar-expand-md navbar-light bg-white">
-    {{#if @blog.navigation}}
-    {{^is "home"}}
+  {{^is "home"}}
+    {{#if @blog.logo}}
+      <a class="navbar-brand" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" width="auto" height="30px"/></a>
+    {{else}}
       <a class="navbar-brand" href="{{@blog.url}}">{{@blog.title}}</a>
-
-    <button class="navbar-toggler my-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    {{/is}}
-
-
-    <div class="collapse navbar-collapse {{#is "home"}}justify-content-center{{else}}justify-content-end{{/is}}" id="navbarSupportedContent">
-      {{navigation}}
-    </div>
     {{/if}}
+  {{/is}}
 
-  </nav>
+  {{#if @blog.navigation}}
+  <button class="navbar-toggler my-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse {{#is "home"}}justify-content-center{{else}}justify-content-end{{/is}}" id="navbarSupportedContent">
+    {{navigation}}
+  </div>
+  {{/if}}
+
+</nav>
