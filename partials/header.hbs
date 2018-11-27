@@ -1,42 +1,26 @@
-{{^is "home"}}
+<header class="bg-white sticky-top shadow">
+  <div class="row col-12">
+    <nav class="nav col-12 navbar navbar-expand-md navbar-light bg-white">
 
-  <header class="bg-white sticky-top shadow">
-    <div class="row col-12">
-      <nav class="nav col-12 navbar navbar-expand-md navbar-light bg-white">
-
-          {{#if @blog.logo}}
-            <a class="navbar-brand" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" width="auto" height="30px"/></a>
-          {{else}}
-            <a class="navbar-brand" href="{{@blog.url}}">{{@blog.title}}</a>
-          {{/if}}
-
-
-        {{#if @blog.navigation}}
-
-        <button class="navbar-toggler my-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse {{#is "home"}}justify-content-center{{else}}justify-content-end{{/is}}" id="navbarSupportedContent">
-          {{navigation}}
-        </div>
-
+        {{#if @blog.logo}}
+          <a class="navbar-brand" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" width="auto" height="30px"/></a>
+        {{else}}
+          <a class="navbar-brand" href="{{@blog.url}}">{{@blog.title}}</a>
         {{/if}}
 
-      </nav>
-    </div>
-  </header>
 
-{{else}}
+      {{#if @blog.navigation}}
 
-  <header class="row my-5 justify-content-center">
-    {{#if @blog.logo}}
-        <img class="site-logo my-5" src="{{@blog.logo}}" alt="{{@blog.title}}" width="600px" height="auto"/>
-    {{else}}
-      <h1 class="col-12 display-2 text-center">{{@blog.title}}</h1>
-      <h2 class="col-12 display-4 text-center">{{@blog.description}}</h2>
-    {{/if}}
-    <div class="col-12 mt-5">{{> "site-nav"}}</div>
-  </header>
-  
-{{/is}}
+      <button class="navbar-toggler my-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        {{navigation}}
+      </div>
+
+      {{/if}}
+
+    </nav>
+  </div>
+</header>

@@ -2,28 +2,23 @@
 
 {{#author}}
 
-    <header class="row mw-100 m-0 px-0 bg-white sticky-top shadow">
-      <div class="row col-12">{{> "site-nav"}}</div>
-    </header>
+  {{> "header"}}
 
-  <div class="card">
-
-    <div class="row card-body">
-      <div class="col-12 col-sm-6">
-        {{#if profile_image}}
-          <img class="rounded-circle p-3" src="{{profile_image}}" alt="{{name}}" width="300px" />
-        {{/if}}
-      </div>
-      <div class="col-12 col-sm-6 p-3">
-        <h1 class="card-title display-2">{{name}}</h1>
-        {{#if bio}}
-          <h2 class="card-subtitle lead">{{plural ../pagination.total empty='Ei artikkeleita' singular='% artikkeli' plural='% artikkelia'}}</h2>
-        {{/if}}
-        <p class="card-text my-4">{{bio}}</p>
-        {{#if location}}
-          <p class="card-text">{{location}}</p>
-        {{/if}}
-      </div>
+  <div class="row py-5">
+    <div class="col-12 col-sm-6 text-center text-sm-right">
+      {{#if profile_image}}
+        <img class="rounded-circle p-3" src="{{profile_image}}" alt="{{name}}" width="300px" />
+      {{/if}}
+    </div>
+    <div class="col-12 col-sm-6 text-center text-sm-left p-3">
+      <h1 class="display-2">{{name}}</h1>
+      {{#if bio}}
+        <h2 class="lead">{{plural ../pagination.total empty='Ei artikkeleita' singular='% artikkeli' plural='% artikkelia'}}</h2>
+      {{/if}}
+      <p class="my-4">{{bio}}</p>
+      {{#if location}}
+        <p>{{location}}</p>
+      {{/if}}
     </div>
   </div>
 {{/author}}
