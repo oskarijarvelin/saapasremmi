@@ -1,0 +1,15 @@
+<nav class="row my-5" role="navigation">
+  <div class="col-4 text-left">
+    {{#if prev}}
+      <a class="" href="{{page_url prev}}">&larr; Uudemmat</a>
+    {{/if}}
+  </div>
+  <div class="col-4 text-center">
+    <span class="">Sivu {{page}} / {{pages}}</span>
+  </div>
+  <div class="col-4 text-right">
+    {{#if next}}
+      <a class="" href="{{page_url next}}">Vanhemmat &rarr;</a>
+    {{/if}}
+  </div>
+</nav>

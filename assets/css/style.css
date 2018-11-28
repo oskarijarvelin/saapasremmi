@@ -13,12 +13,12 @@ img {
   transition: all 0.5s ease;
 }
 
-.zcard:hover {
-  transform: scale(1.03);
+.card-img-top {
+  transform: scale(1.005);
 }
 
-.feature-image {
-  transform: scale(1.005);
+.zcard:hover {
+  transform: scale(1.03);
 }
 
 .shadow-warning {
@@ -37,9 +37,9 @@ img {
 }
 .kg-width-full{
   position: relative;
-  width: 99vw;
+  width: 102vw;
   height: auto;
-  left: calc(-49.5vw + 50%);
+  left: calc(-51vw + 50%);
 }
 .kg-gallery-container {
   display: flex;
@@ -71,7 +71,6 @@ img {
 .kg-image-card.kg-width-wide + .kg-image-card.kg-width-wide {
     margin: -2.25em 0 3em;
 }
-
 
 figcaption {
   max-width: 100%;

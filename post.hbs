@@ -8,10 +8,10 @@
     <article class="row">
 
       {{#if feature_image}}
-      <a href="{{url}}"><img class=" feature-image shadow mb-5" src="{{feature_image}}"></a>
+      <a href="{{url}}"><img class="feature-image shadow" src="{{feature_image}}" alt="{{title}}"></a>
       {{/if}}
 
-      <header class="col-12 my-2">
+      <header class="col-12 mt-5 mb-2">
         {{#if featured}}
           <div class="text-warning"><p class="lead font-weight-bold">POIMINTO</p></div>
         {{/if}}
@@ -33,21 +33,18 @@
   </main>
 
   <div class="row justify-content-center">
-  {{#primary_author}}
+  {{#foreach authors}}
   <div class="col-12 col-md-6">
     <div class="card mt-5">
 
       <div class="row card-body">
-        <div class="col-12 col-sm-6">
+        <div class="col-12 col-sm-6 align-self-center">
           {{#if profile_image}}
             <img class="rounded-circle py-3" src="{{profile_image}}" alt="{{name}}" width="300px" />
           {{/if}}
         </div>
-        <div class="col-12 col-sm-6 py-3">
-          <h1 class="card-title display-4">{{name}}</h1>
-          {{#if bio}}
-            <h2 class="card-subtitle lead">{{plural ../pagination.total empty='Ei artikkeleita' singular='% artikkeli' plural='% artikkelia'}}</h2>
-          {{/if}}
+        <div class="col-12 col-sm-6 py-4 align-self-center">
+          <a href="{{url}}"><h3 class="card-title font-weight-bold">{{name}}</h3></a>
           <p class="card-text my-4">{{bio}}</p>
           {{#if location}}
             <p class="card-text lead">{{location}}</p>
@@ -56,7 +53,7 @@
       </div>
     </div>
   </div>
-  {{/primary_author}}
+  {{/foreach}}
 
   {{subscribe_form}}
 

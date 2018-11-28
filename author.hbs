@@ -5,12 +5,12 @@
   {{> "header"}}
 
   <div class="row py-5">
-    <div class="col-12 col-sm-6 text-center text-sm-right">
+    <div class="col-12 col-sm-6 text-center text-sm-right align-self-center">
       {{#if profile_image}}
         <img class="rounded-circle p-3" src="{{profile_image}}" alt="{{name}}" width="300px" />
       {{/if}}
     </div>
-    <div class="col-12 col-sm-6 text-center text-sm-left p-3">
+    <div class="col-12 col-sm-6 text-center text-sm-left p-3 align-self-center">
       <h1 class="display-2">{{name}}</h1>
       {{#if bio}}
         <h2 class="lead">{{plural ../pagination.total empty='Ei artikkeleita' singular='% artikkeli' plural='% artikkelia'}}</h2>
@@ -28,3 +28,5 @@
     {{> "post-card"}}
   {{/foreach}}
 </main>
+
+{{pagination}}
