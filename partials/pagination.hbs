@@ -5,7 +5,13 @@
     {{/if}}
   </div>
   <div class="col-4 text-center">
-    <span class="">Sivu {{page}} / {{pages}}</span>
+    {{#if prev}}
+      <span class="">Sivu {{page}} / {{pages}}</span>
+    {{else}}
+      {{#if next}}
+      <span class="">Sivu {{page}} / {{pages}}</span>
+      {{/if}}
+    {{/if}}
   </div>
   <div class="col-4 text-right">
     {{#if next}}

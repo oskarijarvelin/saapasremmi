@@ -17,10 +17,9 @@
   {{> "header"}}
 
   <main>
-    <section>
+    <section class="my-5">
       <h1 class="col-12 display-1 text-center">Virhe {{code}}</h1>
-      <p class="col-12 display-4 text-center">Virheen viesti: {{message}}</p>
-      <a href="{{@blog.url}}">Palaa etusivulle →</a>
+      <p class="col-12 display-4 text-center">{{message}}</p>
     </section>
 
     {{#if errorDetails}}
