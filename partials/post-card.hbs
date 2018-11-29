@@ -1,18 +1,18 @@
 <div class="col-12 col-md-6">
   <div class="col-12 card zcard {{#if featured}}border-warning shadow-warning{{else}}shadow{{/if}} my-4">
     {{#if featured}}
-      <div class="card-header text-center pt-4 text-white bg-warning"><h5 class="font-weight-bold">POIMINTO</h5></div>
+      <div class="card-header text-center pt-4 text-white bg-warning"><h5 class="font-weight-bold text-uppercase">{{t "Featured"}}</h5></div>
     {{/if}}
 
     {{#if feature_image}}
       <a href="{{url}}"><img class="card-img-top img-fluid" src="{{feature_image}}"></a>
     {{/if}}
 
-    <article class="card-body">
+    <article class="card-body mb-2">
 
       <a href="{{url}}"><h2 class="card-title">{{title}}</h2></a>
 
-      <p class="card-text lead"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD.MM.YYYY"}}</time> - {{reading_time  seconds=(t "Alle minuutissa luettava") minute=(t "1 minuutissa luettava") minutes=(t "% minuutissa luettava")}}</p>
+      <p class="card-text lead"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD.MM.YYYY"}}</time> - {{reading_time  seconds=(t "Less than 1 min read") minute=(t "1 min read") minutes=(t "% min read")}}</p>
 
       <section>
         <p class="card-text">{{excerpt words="33"}}</p>

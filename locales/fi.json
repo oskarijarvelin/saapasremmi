@@ -1,0 +1,32 @@
+{
+    "Latest Post": "Viimeisimmät artikkelit",
+
+    "Newer Posts": "Vanhemmat",
+    "Older Posts": "Uudemmat",
+    "Page": "Sivu",
+
+    "Featured": "Poiminto",
+    "Less than 1 min read": "Alle minuutissa luettava",
+    "1 min read": "1 minuutissa luettava",
+    "% min read": "% minuutissa luettava",
+
+    "Subscribe emails": "Liity postituslistalle tästä",
+    "Stay up to date with the latest news. No marketing campaigns. No jibber jabber. Unsubscribe anytime.": "Uutiskirjeessä saat tiedon uusista postauksista ensimmäisenä. Ei turhia viestejä.",
+    "youremail@example.com": "matti.meikalainen@domain.fi",
+    "Submit": "Lähetä",
+
+    "No articles": "Ei artikkeleita",
+    "1 article": "1 artikkeli",
+    "% articles": "% artikkelia",
+
+    "Error 404": "Virhe 404",
+    "Page not found": "Sivua ei löytynyt",
+    "Return to the homepage": "Palaa etusivulle",
+
+    "Error": "Virhe",
+    "Theme Errors:": "Teeman virheet:",
+    "Ref:": "Ref:",
+    "Message:": "Viesti:",
+
+    "Total of": "Aiheesta yhteensä"
+}

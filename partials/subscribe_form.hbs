@@ -2,16 +2,16 @@
 <div class="col-12 col-md-6">
   <section class="card mt-5">
     <div class="card-body p-5">
-      <h3 class="card-title">Liity postituslistalle tästä</h3>
-      <p class="card-text">Uutiskirjeessä saat tiedon uusista postauksista ensimmäisenä. Ei turhia viestejä.</p>
+      <h3 class="card-title">{{t "Subscribe emails"}}</h3>
+      <p class="card-text">{{t "Stay up to date with the latest news. No marketing campaigns. No jibber jabber. Unsubscribe anytime."}}</p>
 
       <form method="post" action="{{action}}" class="row">
           {{hidden}}
           <div class="col-10 px-0 mt-2">
-          {{input_email class="form-control p-2" placeholder="matti.meikalainen@domain.fi" value=email autofocus=false}}
+          {{input_email class="form-control p-2" placeholder=(t "youremail@example.com") value=email autofocus=false}}
           </div>
           <div class="col-2 px-0 mt-2">
-          <button class="btn btn-info p-2 ml-1" type="submit">Lähetä</button>
+          <button class="btn btn-info p-2 ml-1" type="submit">{{t "Submit"}}</button>
           </div>
           {{script}}
       </form>

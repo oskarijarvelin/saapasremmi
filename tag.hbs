@@ -10,7 +10,7 @@
       {{#if description}}
         {{description}}
       {{else}}
-        Aiheesta yhteensä {{plural ../pagination.total empty='posts' singular='% julkaisu' plural='% julkaisua'}}
+        {{t "Total of"}} {{plural ../pagination.total empty=(t "No articles") singular=(t "1 article") plural=(t "% articles")}}
       {{/if}}
     </h2>
   </div>

@@ -1,21 +1,21 @@
 <nav class="row my-5" role="navigation">
   <div class="col-4 text-left">
     {{#if prev}}
-      <a class="" href="{{page_url prev}}">&larr; Uudemmat</a>
+      <a class="" href="{{page_url prev}}">&larr; {{t "Newer Posts"}}</a>
     {{/if}}
   </div>
   <div class="col-4 text-center">
     {{#if prev}}
-      <span class="">Sivu {{page}} / {{pages}}</span>
+      <span>{{t "Page"}} {{page}} / {{pages}}</span>
     {{else}}
       {{#if next}}
-      <span class="">Sivu {{page}} / {{pages}}</span>
+      <span>{{t "Page"}} {{page}} / {{pages}}</span>
       {{/if}}
     {{/if}}
   </div>
   <div class="col-4 text-right">
     {{#if next}}
-      <a class="" href="{{page_url next}}">Vanhemmat &rarr;</a>
+      <a class="" href="{{page_url next}}">{{t "Older Posts"}} &rarr;</a>
     {{/if}}
   </div>
 </nav>

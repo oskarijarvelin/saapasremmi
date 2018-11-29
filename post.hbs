@@ -13,7 +13,7 @@
 
       <header class="col-12 mt-5 mb-2">
         {{#if featured}}
-          <div class="text-warning"><p class="lead font-weight-bold">POIMINTO</p></div>
+          <div class="text-warning"><p class="lead font-weight-bold">{{t "Featured"}}</p></div>
         {{/if}}
         <h1 class="display-4">{{title}}</h1>
         <p>
@@ -21,7 +21,7 @@
           {{#primary_tag}}
             <a href="{{url}}">{{name}}</a> -
           {{/primary_tag}}
-          {{reading_time  seconds=(t "Alle minuutissa luettava") minute=(t "1 minuutissa luettava") minutes=(t "% minuutissa luettava")}}
+          {{reading_time  seconds=(t "Less than 1 min read") minute=(t "1 min read") minutes=(t "% min read")}}
         </p>
       </header>
 

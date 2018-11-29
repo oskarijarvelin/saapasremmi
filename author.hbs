@@ -13,7 +13,7 @@
     <div class="col-12 col-sm-6 text-center text-sm-left p-3 align-self-center">
       <h1 class="display-2">{{name}}</h1>
       {{#if bio}}
-        <h2 class="lead">{{plural ../pagination.total empty='Ei artikkeleita' singular='% artikkeli' plural='% artikkelia'}}</h2>
+        <h2 class="lead">{{plural ../pagination.total empty=(t "No articles") singular=(t "1 article") plural=(t "% articles")}}</h2>
       {{/if}}
       <p class="my-4">{{bio}}</p>
       {{#if location}}
