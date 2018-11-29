@@ -6,6 +6,7 @@
     "Page": "Page",
 
     "Featured": "Featured",
+    "displayDateFormat": "DD MMMM YYYY",
     "Less than 1 min read": "Less than 1 min read",
     "1 min read": "1 min read",
     "% min read": "% min read",

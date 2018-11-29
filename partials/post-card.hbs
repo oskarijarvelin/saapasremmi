@@ -12,7 +12,7 @@
 
       <a href="{{url}}"><h2 class="card-title">{{title}}</h2></a>
 
-      <p class="card-text lead"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD.MM.YYYY"}}</time> - {{reading_time  seconds=(t "Less than 1 min read") minute=(t "1 min read") minutes=(t "% min read")}}</p>
+      <p class="card-text lead"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format=(t "displayDateFormat")}}</time> - {{reading_time  seconds=(t "Less than 1 min read") minute=(t "1 min read") minutes=(t "% min read")}}</p>
 
       <section>
         <p class="card-text">{{excerpt words="33"}}</p>

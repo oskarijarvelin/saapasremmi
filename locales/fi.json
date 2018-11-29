@@ -6,6 +6,7 @@
     "Page": "Sivu",
 
     "Featured": "Poiminto",
+    "displayDateFormat": "DD.MM.YYYY",
     "Less than 1 min read": "Alle minuutissa luettava",
     "1 min read": "1 minuutissa luettava",
     "% min read": "% minuutissa luettava",
